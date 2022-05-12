@@ -1,0 +1,471 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/Sanstitre-1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Will Entertainment</title>
+	<link rel="icon" type="image/x-icon" href="../images/mini logo.png">
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+	<style>
+	
+.home-intro {
+  padding: 40vh 0;
+  background: #123 url("../images/logosjeux.gif");
+  background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+}
+
+.home-about {
+  padding: 4em 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.columns {
+  display: flex;
+}
+
+.col + .col {
+  margin-left: 1.5em;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.more-stuff-grid {
+  background: #252525;
+  padding: 4em 0;
+  display: grid;
+  grid-gap: 2em;
+  align-items: center;
+  grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 487px)) minmax(
+      1em,
+      1fr
+    );
+}
+
+.from-left {
+  grid-column: 2/ 3;
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3 / 4;
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+		}
+	
+		
+		
+		
+	.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: gainsboro;
+	opacity: 90%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(0.5, 0.25);
+}
+
+	</style>
+
+<!-- InstanceEndEditable -->
+	
+	<style>
+		
+				h1{
+								color: snow;
+			font-size: 50px;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		}
+		
+		p{
+			font-size: 25px;
+			color: white;
+			text-align: justify;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		}
+		
+		h2{
+			font-size: 30px;
+			color: snow;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+		}
+		
+		h3{
+			font-size: 20px;
+				color: black;
+		}
+		
+			a:link{
+  color: blueviolet;
+				font-size: 30px; 
+}
+		
+		a:hover{
+  color: blue;
+			font-size: 30px;
+			text-decoration: none;
+}
+		
+		a:visited{
+			color: #C6C6C6; 
+			font-size: 30px;
+}
+			
+		body::-webkit-scrollbar {
+  width: 12px;/* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: white;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px groove #A9A9A9;  /* creates padding around scroll thumb */
+}
+	
+		
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+	z-index: 999;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+	float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: mediumslateblue;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+		
+		#title{
+  background-image: url("../images/backtitre.gif");
+}
+</style>
+</head>
+
+<body bgcolor="#252525">
+	<div id="title">
+  <table width="100%">
+    <tbody>
+      <tr>
+        <td width="25%" align="center"><a href="../index.html"><img src="../images/logo.png" width="500" height="150" alt=""/></a></td>
+        <td width="75%" align="center">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+		
+</div>
+
+<div id="navbar">
+  <a class="active" href="../index.html">Accueil</a>
+  <a href="qui%20suis%20je.html">Qui suis-je?</a>
+  <a href="compétences.html">Compétences</a>
+	<a href="travaux.html">Travaux</a>
+  <a href="contact.html">Contact</a>
+	<a href="Plan.html">Plan</a>
+	<a href="financez.html" style="float:right">Financez-moi</a>
+</div>
+
+<div class="content">
+  
+<table width="100%">
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><!-- InstanceBeginEditable name="EditRegion3" --> 
+		  <main>
+      <div class="home-intro">
+        <h1>Mes différents jeux</h1>
+      </div>
+
+			 <!--
+
+      <div class="home-about">
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="columns">
+          <div class="col fade-in">
+            <h3>Lorem, ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+              maiores fuga eos provident voluptas perferendis.
+            </p>
+          </div>
+          <div class="col fade-in">
+            <h3>A, illo!</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus minima quo beatae eius blanditiis officiis.
+            </p>
+          </div>
+          <div class="col fade-in">
+            <h3>Repudiandae, error?</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+              quasi quis doloribus quia illum laudantium.
+            </p>
+          </div>
+        </div>
+      </div>-->
+
+			
+      <div class="home-more-stuff">
+        <div class="more-stuff-grid">
+			
+			<div class="slide-in from-left">
+			<div class="container"> <img src="../images/logo cat.png" alt="Avatar" class="image" >
+				<a href="https://willywello.github.io/underproject/underproject" target="_blank">
+  <img src="../images/playbutton.PNG" class="overlay" > </a>
+				
+</div>
+			</div>
+		
+          <p class="slide-in from-right">
+            'Undercat' est un jeu inspiré du système de combat du jeu populaire Undertale. On y affronte un drôle de chat qui ne veut que s'amuser avec vous. Allez-vous savoir quand retenir vos coups? Faites attention, car il peut être redoutable si vous l'énervez un peu trop...
+          </p>
+        </div>
+        <div class="more-stuff-grid">
+          <p class="slide-in from-left">
+            'Space Mission' a été mon premier jeu de tir. C'est un jeu ambitieux comportant 3 niveaux dont un boss, Pixie le chat spacial. Il a d'ailleurs fini 12e dans le GoedWare Game Jam #4 où il a reçu beaucoup de commentaires positifs. On y contrôle un vaisseau spatial à la recherche de son chat perdu dans l'espace, mais... veut-il vraiment être retrouvé?
+          </p>
+			
+          <div class="slide-in from-right">
+			<div class="container"> <img src="../images/logo-space.png" alt="Avatar" class="image" >
+				<a href="https://willywello.itch.io/space-mission" target="_blank">
+  <img src="../images/playbutton.PNG" class="overlay" > </a>
+				
+</div>
+			</div>
+        </div>
+        <div class="more-stuff-grid">
+          <div class="slide-in from-left">
+			<div class="container"> <img src="../images/logo-ultime.png" alt="Avatar" class="image" >
+				<a href="https://willywello.github.io/underproject/projet%20cool.html" target="_blank">
+  <img src="../images/playbutton.PNG" class="overlay" > </a>
+				
+</div>
+			</div>
+          <p class="slide-in from-right">
+            'Le jeu ultime' a été mon premier grand jeu avec plus de 15 niveaux, un système de boutique et un boss de fin. C'est un jeu captivant où l'on contrôle un carré nommé Bob qui cherche à se rendre au fond du donjon pour affronter son méchant frère, Jeremy. Je vous mets au défi de finir le jeu sans vous procurer la moindre amélioration dans la boutique du jeu!
+          </p>
+        </div>
+        <div class="more-stuff-grid">
+          <p class="slide-in from-left">
+            'Oiseau qui sautille' a été mon premier grand succès. J'expérimentais à l'époque sur plusieurs jeux mobiles possibles. Lorsque l'idée pour ce jeu m'est venu après avoir vu un oiseau tomber à pique puis remonter rapidement plusieurs fois de suite, j'ai su que c'était la bonne. Bien que je n'étais pas si fier de la simplicité du jeu, cette première réussite me motiva moralement et surtout financièrement. C'est dur de gagner sa vie en développant des jeux!
+          </p>
+			
+          <div class="slide-in from-right">
+			<div class="container"> <img src="../images/logo oiseau.png" alt="Avatar" class="image" >
+				<a href="https://willywello.github.io/oiseauquisautille/" target="_blank">
+  <img src="../images/playbutton.PNG" class="overlay" > </a>
+				
+</div>
+			</div>
+			
+        </div>
+        <div class="more-stuff-grid">
+			
+<div class="slide-in from-left">
+			<div class="container"> <img src="../images/logo pong.png" alt="Avatar" class="image" >
+				<a href="https://willywello.github.io/ULTIMATEPONG/ULTIMATE%20PONG.html" target="_blank">
+  <img src="../images/playbutton.PNG" class="overlay" > </a>
+				
+</div>
+			</div>
+          <p class="slide-in from-right">
+            'ULTIMATE PONG' a été mon premier jeu indépendant. Loin d'être parfait, le jeu m'a tout de même permis de rassembler une petite communauté de personnes qui trouvaient mon travail intéresssant. Leur soutient m'a permis de continuer ma passion et de sortir les grands succès qui ont suivis. Parfois, ré-imaginer un classique peut être très payant!
+          </p>
+        </div>
+        <div class="more-stuff-grid">
+          <p class="slide-in from-left">
+           'The Legend of Rock, Paper, Scissors' a été mon premier jeu pour lequel je fus payé. En effet, j'avais été engagé par Nintendo pour repenser la manière de jouer à l'un de leur classique. Par contre, ils n'ont pas aimé mon prototype, le trouvant trop simple et pas assez excitant. C'est alors que j'ai appris que mon concept de roche, papier, ciseaux n'avait rien d'original, le jeu étant déjà connu. On ne peut pas toujours réussir du premier coup.
+          </p>
+          <div class="slide-in from-right">
+			<div class="container"> <img src="../images/logo-legend.png" alt="Avatar" class="image" >
+				<a href="https://willywello.github.io/TheLegendOfRPS/projet.html" target="_blank">
+  <img src="../images/playbutton.PNG" class="overlay" > </a>
+				
+</div>
+			</div>
+        </div>
+		  
+		   <div class="more-stuff-grid">
+			
+<div class="slide-in from-left">
+			<div class="container"> <img src="../images/logo-devine.png" alt="Avatar" class="image" >
+				<a href="https://willywello.github.io/DevineLeChiffre/projet.html" target="_blank">
+  <img src="../images/playbutton.PNG" class="overlay" > </a>
+				
+</div>
+			</div>
+          <p class="slide-in from-right">
+            'Devine le Chiffre' est le premier jeu que j'ai programmé en secondaire 4. Je me rappelle avoir eu beaucoup de misère à le coder malgré sa simplicité. Le but est tout simplement de deviner un chiffre de 1 à 100 avec un nombre limité de vies qui dépend de la difficulté sélectionnée. Je me trouvais alors très bon et je n'avais aucune idée que j'allais un jour faire des jeux pour vivre.
+          </p>
+        </div>
+      </div>
+    </main>
+		  
+		  <script>
+			  const header = document.querySelector("header");
+const sectionOne = document.querySelector(".home-intro");
+
+const faders = document.querySelectorAll(".fade-in");
+const sliders = document.querySelectorAll(".slide-in");
+
+const sectionOneOptions = {
+  rootMargin: "-200px 0px 0px 0px"
+};
+
+const sectionOneObserver = new IntersectionObserver(function(
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add("nav-scrolled");
+    } else {
+      header.classList.remove("nav-scrolled");
+    }
+  });
+},
+sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
+
+const appearOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -250px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(
+  entries,
+  appearOnScroll
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+sliders.forEach(slider => {
+  appearOnScroll.observe(slider);
+});</script><!-- InstanceEndEditable --></td>
+    </tr>
+    <tr>
+      <td align="right" valign="bottom" bgcolor="#838383" style="font-size: 20px">Créateur du site: William Bradette-Chénier</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+<!-- InstanceEnd --></html>
